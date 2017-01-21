@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta content="en-us" http-equiv="Content-Language" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Gender</title>
+    <script src="COMP-125-004/Assignment1.js"></script>
+
+    <style>
+        body {
+            background-color: #CCFF99;
+            width: 950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .area1 {
+            background-color: #CCFF99;
+            color: maroon;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="area1">
+        <p class="area1">
+            <br />
+        </p>
+        <form class="area1">
+            <table style="width: 100%">
+                <tr>
+                    <td style="text-align: right; width: 298px">GENDER</td>
+                    <td>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <select name="genderOpt" id="genderOpt" style="width: 67px" tabindex="12" size="1">
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                        </select>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: right; width: 298px">AGE</td>
+                    <td>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input name="AgeNumber" id="ageNumber" size="4" style="width: 65px" tabindex="13" type="text" />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: right; width: 300px">YOUR HEIGHT</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+            <table style="width: 100%">
+                <tr>
+                    <td style="text-align: right; width: 300px;">FEET:</td>
+                    <td>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input name="feetMeasurement" id="feetMeasurement" style="width: 60px" type="text" tabindex="14" value="0" />
+
+                    </td>
+                    <td style="text-align: right">INCHES:</td>
+                    <td>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input name="inchesMeasurement" id="inchesMeasurement" type="text" style="width: 60px" tabindex="15" value="0" />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: right; width: 300px;">YOUR WEIGHT</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="text-align: right; width: 300px;">STONES:</td>
+                    <td>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input name="stonesMeasurement" id="stonesMeasurement" type="text" style="width: 60px" tabindex="15" value="0" />
+
+                    </td>
+                    <td style="text-align: right">POUNDS:</td>
+                    <td>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input name="poundsMeasurement" id="poundsMeasurement" type="text" style="width: 60px" tabindex="16" value="0" />
+
+                    </td>
+                </tr>
+            </table>
+
+            <p>Select your activity level:</p>
+            <table style="width: 100%">
+                <tr>
+                    <td style="width: 10px">
+
+                        <input name="radioButtons" id="sedentary" tabindex="17" type="radio" value="1" />
+                    </td>
+                    <td>I am sedentary (little or no exercise)</td>
+                </tr>
+                <tr>
+                    <td style="width: 10px">
+
+                        <input name="radioButtons" id="lightlyActive" tabindex="18" type="radio" value="2" />
+                    </td>
+                    <td>I am lightly active (light exercise or sports 1-3 days per week)</td>
+                </tr>
+                <tr>
+                    <td style="width: 10px">
+
+                        <input name="radioButtons" id="moderatelyActive" tabindex="19" type="radio" value="3" />
+                    </td>
+                    <td>
+                        I am moderately active (moderate exercise or sports 3-5 days per
+                        week)
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 10px">
+                        <input name="radioButtons" id="veryActive" tabindex="20" type="radio" value="4" />
+                    </td>
+                    <td>I am very active (hard exercise or sports 6-7 days per week)</td>
+                </tr>
+                <tr>
+                    <td style="width: 10px">
+
+                        <input name="radioButtons" id="superActive" tabindex="21" type="radio" value="5" />
+                    </td>
+                    <td>
+                        I am super active (very hard exercise or sports and a physical job
+                        or 2x training)
+                    </td>
+                </tr>
+                <tr></tr>
+
+            </table>
+            <button onclick="calculateBMI()">Calculate</button>
+
+
+            <label id="bmr"></label>
+            <br />
+            <label id="dailyCalories"></label>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
